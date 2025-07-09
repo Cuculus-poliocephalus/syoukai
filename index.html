@@ -5,16 +5,14 @@
         <title>yurayura"syoukai"</title>
         <link rel="icon" href="favicon.ico">
         <style>
-            .qa-7 {
+.qa-1 {
     max-width: 500px;
-    margin-bottom: 10px;
-    border: none;
+    margin-bottom: 7px;
+    border: 1px solid #803e00;
     border-radius: 25px;
-    box-shadow: 0 4px 4px rgb(0 0 0 / 2%), 0 2px 3px -2px rgba(0 0 0 / 5%);
-    background-color: #fff;
 }
 
-.qa-7 summary {
+.qa-1 summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,20 +23,20 @@
     cursor: pointer;
 }
 
-.qa-7 summary::before,
-.qa-7 p::before {
+.qa-1 summary::before,
+.qa-1 p::before {
     position: absolute;
     left: 1em;
     font-weight: 600;
     font-size: 1.3em;
 }
 
-.qa-7 summary::before {
+.qa-1 summary::before {
     color: #75bbff;
     content: "Q";
 }
 
-.qa-7 summary::after {
+.qa-1 summary::after {
     transform: translateY(-25%) rotate(45deg);
     width: 7px;
     height: 7px;
@@ -49,11 +47,11 @@
     transition: transform .5s;
 }
 
-.qa-7[open] summary::after {
+.qa-1[open] summary::after {
     transform: rotate(225deg);
 }
 
-.qa-7 p {
+.qa-1 p {
     position: relative;
     transform: translateY(-10px);
     opacity: 0;
@@ -63,12 +61,12 @@
     transition: transform .5s, opacity .5s;
 }
 
-.qa-7[open] p {
+.qa-1[open] p {
     transform: none;
     opacity: 1;
 }
 
-.qa-7 p::before {
+.qa-1 p::before {
     color: #ff8d8d;
     line-height: 1.2;
     content: "A";
